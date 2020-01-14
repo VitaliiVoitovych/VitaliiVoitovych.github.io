@@ -1,0 +1,149 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+.header{
+	background: url(../img/ivan-torres-MQUqbmszGGM-unsplash.jpg) center no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+}
+/* Header__inner
+===================*/
+.header__inner{
+	font-family: 'Kaushan Script', cursive;
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	align-items: center;
+}
+.header__inner h1{
+	font-size: 40px;
+	color: #fff;
+}
+.menu{
+	display: flex;
+	margin-left: auto;
+}
+.link__item{
+	margin: 0 10px;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+.link__item:first-child{
+	margin-left:0;
+}
+.link__item:hover{
+	color: #fce17e;
+	transition: color 0.3s linear;
+}
+/* Header__body
+===================*/
+.header__body{
+	width: 100%;
+	max-width: 850px;
+	height: 80vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header__title{
+	text-align: center;
+}
+.suptitle{
+	display: block;
+	color: #fff;
+	font-size: 36px;
+	font-family: 'Kaushan Script', cursive;	
+	text-shadow: 10px 10px 14px rgba(0,0,0,0.9),10px 10px 14px rgba(0,0,0,0.9);
+}
+.title{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 70px;
+	font-weight: 700;
+	text-shadow: 10px 10px 14px rgba(0,0,0,0.9),10px 10px 14px rgba(0,0,0,0.9);
+}
+/* Header__footer
+=====================*/
+
+.header__footer{
+	width: 100%;
+	height: 10vh;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.social{
+	width: 100%;
+	max-width: 500px;
+	height: 10vh;
+	margin: 0 auto;
+}
+.social__menu{
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	justify-content: space-between;
+}
+.fab{
+	display: flex;
+}
+.social__item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 20px;
+	border: 5px #fff solid;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+}
+.instagram:hover{
+	border-color: #fdf497;
+	color: #fdf497;
+	transition: all 0.3s;
+	box-shadow: 0 0 35px #fdf497;
+}
+.twitter:hover{
+	border-color: #00ACED;
+	color: #00ACED;
+	box-shadow: 0 0 35px #00ACED;
+	transition: all 0.3s;
+}
+.vk:hover{
+	border-color: #4D75A3;
+	color: #4D75A3;
+	box-shadow: 0 0 35px #4D75A3;
+	transition: all 0.3s;
+}
+.telegram:hover{
+	border-color: #2BA2DF;
+	color: #2BA2DF;
+	box-shadow: 0 0 35px #2BA2DF;
+	transition: all 0.3s;
+}
+.facebook:hover{
+	border-color: #3B5998;
+	color: #3B5998;
+	box-shadow: 0 0 35px #3B5998;
+	transition: all 0.3s;
+}
