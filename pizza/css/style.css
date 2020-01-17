@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6{
 	height: 10vh;
 	align-items: center;
 }
-.header__inner h1{
+.logoname{
 	font-size: 40px;
 	color: #fff;
 }
