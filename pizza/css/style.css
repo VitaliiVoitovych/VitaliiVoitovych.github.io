@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5,h6{
   transition: 0.2s;
 }
 .menu-btn span::before {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 .menu-btn span::after {
   transform: translateY(5px);
