@@ -39,7 +39,6 @@ h1,h2,h3,h4,h5,h6{
   display: none;
   width: 40px;
   height: 40px;
-  border: 3px #fff solid;
   border-radius: 50%;
   position: relative;
   margin-left: auto;
@@ -51,8 +50,8 @@ h1,h2,h3,h4,h5,h6{
   top: 50%; margin-top: -1px;
   left: 50%; margin-left: -10px;
   width: 20px;
-  height: 2px;
-  border: 25px;
+  height: 3px;
+  border-radius: 50px;	
   background-color: #fff;
 }
 .menu-btn span::before,
@@ -62,7 +61,7 @@ h1,h2,h3,h4,h5,h6{
   transition: 0.2s;
 }
 .menu-btn span::before {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
 }
 .menu-btn span::after {
   transform: translateY(5px);
