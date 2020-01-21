@@ -66,16 +66,14 @@ h1,h2,h3,h4,h5,h6{
 .menu-btn span::after {
   transform: translateY(5px);
 }
-
+.menu-btn_active span{
+	height: 0;
+}
 .menu-btn_active span:before {
-  transform: rotate(-35deg);
-  width: 10px;
-  transform-origin: left bottom;
+  transform: rotate(45deg);
 }
 .menu-btn_active span:after {
-  transform: rotate(35deg);
-  width: 10px;
-  transform-origin: left top;
+	transform: rotate(-45deg);
 }
 .menu{
 	display: flex;
