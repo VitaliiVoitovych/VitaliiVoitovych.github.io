@@ -1,12 +1,6 @@
 .welcome
     text-align: center
     padding: 70px 0
-    &-title
-        font-size: 45px
-    &-text
-        font-size: 25px
-        padding: 0 15%
-        color: #2C3A47
 .about-us
     background: rgba(0, 0, 0,0.9)
     color: #fff
@@ -27,3 +21,25 @@
             display: flex
             align-items: center
             padding: 30px
+.why-us
+    padding: 70px 0
+    text-align: center
+.menu
+    background: rgba(0, 0, 0, 0.9)
+    color: #ffffff
+    &-grid
+        padding: 
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr))
+        grid-auto-rows: 200px
+        grid-gap: 15px
+        grid-column-start: 3
+        &-card
+            
+            perspective: 1000px
+            transform-style: preserve-3d
+            &-card_item
+                background: #B77E4B
+                width: 100%
+                height: 100%
+                transition: transform 0.2s
