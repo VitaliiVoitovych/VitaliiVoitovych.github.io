@@ -164,15 +164,27 @@
   color: #ffffff;
 }
 
+.menu-title {
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-title p {
+  color: #ffffff;
+  font-size: 25px;
+}
+
 .menu-grid {
+  padding: 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(250px, 250px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-auto-rows: 250px;
   grid-gap: 15px;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
 }
 
 .menu-grid-card {
@@ -183,13 +195,88 @@
 }
 
 .menu-grid-card-card_item {
-  background: #B77E4B;
+  padding: 1rem;
+  background: #ffdead;
   width: 100%;
   height: 100%;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.menu-grid-card-card_item .card_item-photo {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.menu-grid-card-card_item .card_item-text {
+  background: #171717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15%;
+}
+
+.menu-grid-card-card_item .card_item-text p {
+  margin: 0;
+}
+
+.contact {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.contact-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info-block {
+  width: 50%;
+  height: 400px;
+}
+
+.contact-info-block .inner-contact {
+  width: 100%;
+  height: 100%;
+  background: #ecf0f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-info-block .inner-contact form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 * {
