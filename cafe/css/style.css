@@ -231,36 +231,40 @@
   margin: 0;
 }
 
-.contact {
+.order {
   padding: 5rem 0;
   text-align: center;
 }
 
-.contact-info {
+.order-info {
+  margin: 20px 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact-info-grid {
+.order-info-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact-info .photo {
-  background: rgba(0, 0, 0, 0.9);
-  margin-left: -100px;
-}
-
-.contact-info-block {
+.order-info-block {
   padding: 30px;
   width: 50%;
   height: 400px;
 }
 
-.contact-info-block .inner-contact {
+.order-info-block .background-img {
+  background: url(../img/jonas-lee-o6elTKWZ5bI-unsplash.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border: 30px #171717 solid;
+}
+
+.order-info-block .inner-order {
   width: 100%;
   height: 100%;
   background: #ecf0f1;
@@ -272,10 +276,12 @@
           justify-content: center;
 }
 
-.contact-info-block .inner-contact .form-menu {
+.order-info-block .inner-order .form-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,8 +291,155 @@
           flex-direction: column;
 }
 
-.contact-info-block .inner-contact .form-menu-btn {
+.order-info-block .inner-order .form-menu label {
+  background: #ecf0f1;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+  width: 15%;
+}
+
+.order-info-block .inner-order .form-menu input {
+  width: 95%;
+  height: 40px;
+  font-size: 25px;
+  background: #ecf0f1;
   border: none;
+  border-bottom: 2px #171718 solid;
+  text-align: right;
+}
+
+.order-info-block .inner-order .form-menu-btn {
+  border: none;
+  width: 50%;
+  padding: 15px;
+  margin: 0 auto;
+  background: #171717;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.order-info-block .inner-order .form-menu-btn span {
+  font-size: 25px;
+  position: relative;
+}
+
+.order-info-block .inner-order .form-menu-btn span::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  top: 100%;
+  right: 0;
+  background: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.order-info-block .inner-order .form-menu-btn:hover {
+  cursor: pointer;
+}
+
+.order-info-block .inner-order .form-menu-btn:hover span::before {
+  width: 100%;
+  left: 0;
+}
+
+.footer {
+  background: #171717;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer .social {
+  width: 100%;
+  max-width: 500px;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+.footer .social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .fab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 20px;
+  border: 5px #fff solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+.footer .instagram:hover {
+  border-color: #fdf497;
+  color: #fdf497;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 0 25px #fdf497;
+          box-shadow: 0 0 25px #fdf497;
+}
+
+.footer .twitter:hover {
+  border-color: #00ACED;
+  color: #00ACED;
+  -webkit-box-shadow: 0 0 25px #00ACED;
+          box-shadow: 0 0 25px #00ACED;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer .vk:hover {
+  border-color: #4D75A3;
+  color: #4D75A3;
+  -webkit-box-shadow: 0 0 25px #4D75A3;
+          box-shadow: 0 0 25px #4D75A3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer .telegram:hover {
+  border-color: #2BA2DF;
+  color: #2BA2DF;
+  -webkit-box-shadow: 0 0 25px #2BA2DF;
+          box-shadow: 0 0 25px #2BA2DF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer .facebook:hover {
+  border-color: #3B5998;
+  color: #3B5998;
+  -webkit-box-shadow: 0 0 25px #3B5998;
+          box-shadow: 0 0 25px #3B5998;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 * {

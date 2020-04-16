@@ -61,22 +61,26 @@
                     height: 15%
                     p
                         margin: 0
-.contact
+.order
     padding: 5rem 0
     text-align: center
-.contact-info
+.order-info
+    margin: 20px 0
     width: 100%
     display: flex
     &-grid
         display: flex
-    .photo
-        background: rgba(0,0,0,0.9)
-        margin-left: -100px 
     &-block
         padding: 30px
         width: 50%
         height: 400px
-        .inner-contact
+        .background-img
+            background: url(../img/jonas-lee-o6elTKWZ5bI-unsplash.jpg) no-repeat
+            background-size: cover
+            width: 100%
+            height: 100%
+            border: 30px #171717 solid
+        .inner-order
             width: 100%
             height: 100%
             background: #ecf0f1
@@ -84,8 +88,45 @@
             justify-content: center
             .form-menu
                 justify-content: center
+                justify-items: center
+                text-align: center
                 display: flex
                 flex-direction: column
+                label
+                    background: #ecf0f1
+                    transform: translateY(-60%)
+                    width: 15%
+                input
+                    width: 95%
+                    height: 40px
+                    font-size: 25px
+                    background: #ecf0f1
+                    border: none
+                    border-bottom: 2px #171718 solid
+                    text-align: right
                 &-btn
                     border: none
                     background: 
+                    width: 50%
+                    padding: 15px
+                    margin: 0 auto
+                    background: #171717
+                    color: #ffffff
+                    border-radius: 25px
+                    span
+                        font-size: 25px
+                        position: relative
+                        &::before
+                            position: absolute
+                            content: ""
+                            width: 0%
+                            height: 2px
+                            top: 100%
+                            right: 0
+                            background: #ffffff
+                            transition: 0.3s
+                    &:hover
+                        cursor: pointer
+                        span::before
+                            width: 100%
+                            left: 0
