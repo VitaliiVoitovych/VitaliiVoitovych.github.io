@@ -249,7 +249,13 @@
   display: flex;
 }
 
+.contact-info .photo {
+  background: rgba(0, 0, 0, 0.9);
+  margin-left: -100px;
+}
+
 .contact-info-block {
+  padding: 30px;
   width: 50%;
   height: 400px;
 }
@@ -266,7 +272,7 @@
           justify-content: center;
 }
 
-.contact-info-block .inner-contact form {
+.contact-info-block .inner-contact .form-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -277,6 +283,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contact-info-block .inner-contact .form-menu-btn {
+  border: none;
 }
 
 * {
