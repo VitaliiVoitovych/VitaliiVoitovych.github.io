@@ -54,6 +54,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .navbar-logoname {
+    font-size: 1rem;
+  }
   .hero-inner-worktime h1 {
     font-size: 30px;
   }
