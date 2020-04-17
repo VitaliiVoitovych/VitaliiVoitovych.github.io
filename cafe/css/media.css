@@ -19,4 +19,64 @@
     font-size: 30px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .about-us-grid-text p {
+    font-size: 15px;
+  }
+  .menu-title p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  .navbar-logoname {
+    font-size: 1.5rem;
+  }
+  .order-info-grid {
+    display: block;
+  }
+  .order-info-grid .order-info-block {
+    width: 100%;
+  }
+  .hero-inner-worktime h1 {
+    font-size: 35px;
+  }
+  .hero-inner-worktime h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-inner-worktime h1 {
+    font-size: 30px;
+  }
+  .hero-inner-worktime h2 {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .about-us-grid-text {
+    padding: 15px;
+  }
+  .about-us-grid-text .title {
+    font-size: 20px;
+  }
+  .about-us-grid-text p {
+    font-size: 10px;
+  }
+  .about-us-grid-text {
+    padding: 15px;
+  }
+}
 /*# sourceMappingURL=media.css.map */
