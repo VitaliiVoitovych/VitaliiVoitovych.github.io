@@ -22,6 +22,31 @@
           align-items: center;
 }
 
+.navbar .menu-btn {
+  display: none;
+  border: none;
+  width: 50px;
+  padding: 10px;
+  margin-left: auto;
+  background: #28292B;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .menu-btn-line {
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 75px;
+  margin: 3px auto;
+}
+
+.navbar .menu-btn:hover {
+  cursor: pointer;
+}
+
 .navbar-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,14 +69,18 @@
 }
 
 .navbar-menu {
+  background: #28292b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   height: 100%;
+  margin-left: auto;
 }
 
 .navbar-menu__link {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: #28292b;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,9 +107,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -352,6 +381,10 @@
   color: #ffffff;
 }
 
+.footer-title {
+  padding: 20px 0;
+}
+
 .footer .social {
   width: 100%;
   max-width: 500px;
@@ -440,6 +473,10 @@
           box-shadow: 0 0 25px #3B5998;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.footer .facebook:hover .copyright {
+  margin: 0;
 }
 
 * {

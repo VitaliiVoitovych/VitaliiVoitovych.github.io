@@ -6,8 +6,9 @@
   <title>Uno Momento</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="shortcut icon" href="/img/cafe.png" type="image/png">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="header">
@@ -20,8 +21,13 @@
           <em>Uno Momento</em>
         </h1>
 				<div class="navbar-menu">
+          <button class="menu-btn" onclick="activeFunction(this)">
+            <span class="menu-btn-line"></span>
+            <span class="menu-btn-line"></span>
+            <span class="menu-btn-line"></span>
+          </button>
 					<a href="#" class="navbar-menu__link">Home</a>
-					<a href="#about-us" class="navbar-menu__link">About us</a>
+					<a href="#about-us" class="navbar-menu__link">About_us</a>
 					<a href="#" class="navbar-menu__link">Menu</a>
 					<a href="#" class="navbar-menu__link">Order</a>
 				</div>
@@ -179,7 +185,7 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <h1>Social Contact</h1>
+      <h1 class="footer-title">Social Contact</h1>
       <div class="social">
         <nav class="social-menu">
           <a href="#" class="social-item instagram"><i class="fab fa-instagram"></i></a>
@@ -193,7 +199,9 @@
     <div class="copyright">
     </div>
   </footer>
+  <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/effect.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/menu-btn.js"></script>
 </body>
 </html>

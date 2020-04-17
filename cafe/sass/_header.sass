@@ -1,3 +1,4 @@
+
 .header
     width: 100%
     height: 100vh
@@ -8,6 +9,23 @@
     height: 7vh
     display: flex
     align-items: center
+    .menu-btn
+        display: none
+        border: none
+        width: 50px
+        padding: 10px
+        margin-left: auto
+        background: #28292B
+        justify-content: center
+        &-line
+            display: block
+            width: 50%
+            height: 3px
+            background: #ffffff
+            border-radius: 75px
+            margin: 3px auto
+        &:hover
+            cursor: pointer
     &-logo
         display: flex
         align-items: center
@@ -18,10 +36,13 @@
         color: #ffffff
         margin-left: 20px
     &-menu
+        background: #28292b
         display: flex
-        margin-left: auto
         height: 100%
+        margin-left: auto 
         &__link
+            transition: 1s
+            background: #28292b
             color: #ffffff
             display: flex
             text-decoration: none
@@ -37,7 +58,7 @@
     background: url(../img/header_background.jpg) no-repeat center
     background-size: cover
     display: flex
-    align-items: center
+    align-items: flex-end
     justify-content: center
     text-align: right
     &-inner
