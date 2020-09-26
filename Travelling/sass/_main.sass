@@ -1,0 +1,88 @@
+main
+    width: 100%
+    height: 500px
+.cities
+    padding: 0 auto
+    &-card
+        margin: 50px 0
+        width: 100%
+        height: 500px
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7)
+        border-radius: 25px
+        display: flex
+        &-img
+            padding: 25px
+            width: 50%
+            height: 100%
+            position: relative
+            perspective: 1000px
+            &-front, &-back
+                padding: 25px
+                position: absolute
+                width: 100%
+                height: 100%
+                left: 0
+                top: 0
+                transition: 1s
+                backface-visibility: hidden
+            &-front
+            &-back
+                transform: rotateY(180deg)
+                .ticket-information
+                    height: 75%
+                    &-price
+                        font-style: italic
+                        color: #943E43
+                .buttons
+                    height: 25%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    .btn
+                        text-transform: uppercase
+                        color: #ffffff
+                        font-family: 'IBM Plex Sans', sans-serif
+                        font-size: 20px
+                        font-weight: 700
+                        background: #27ae60
+                        width: 160px
+                        height: 50px
+                        border-radius: 10px
+                        border: 0
+                        cursor: pointer
+                        transition: all 0.3s
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7)
+                        &:hover
+                            background: #1E9757
+        .cities-card-img:hover
+            .cities-card-img-front
+                transform: rotateY(180deg)
+            .cities-card-img-back
+                transform: rotateY(360deg)
+        &-information
+            font-family: 'IBM Plex Sans', sans-serif
+            padding: 30px
+            border-radius:  0 25px 25px 0
+            width: 50%
+            height: 100%
+            background: $cities-card-info-color
+            font-size: 25px
+            .title
+                display: block
+                height: 10%
+                margin: 15px 0
+                font-weight: 700
+                font-size: 45px
+                text-align: center
+                text-transform: uppercase
+                color: $information-title-color
+            .text-information-right
+                display: block
+                height: 90%
+                padding: 5px
+                text-align: right
+                height: auto
+            .text-information-left
+                text-align: auto
+                height: auto
+                padding: 5px

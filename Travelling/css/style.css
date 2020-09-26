@@ -1,0 +1,234 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/header-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.header .navbar {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .menu {
+  margin-left: auto;
+}
+
+.header .navbar .logo {
+  height: 100%;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navbar .logo-icon {
+  height: 100%;
+  padding: 3px;
+}
+
+.header .navbar-menu {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 700;
+}
+
+.header .navbar-menu-item {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  position: relative;
+}
+
+.header .navbar-menu-item::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  border-radius: 25px;
+  background: #ffffff;
+  top: 150%;
+  right: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .navbar-menu .navbar-menu-item:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+}
+
+.cities {
+  padding: 0 auto;
+}
+
+.cities-card {
+  margin: 50px 0;
+  width: 100%;
+  height: 500px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cities-card-img {
+  padding: 25px;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.cities-card-img-front, .cities-card-img-back {
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.cities-card-img-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cities-card-img-back .ticket-information {
+  height: 75%;
+}
+
+.cities-card-img-back .ticket-information-price {
+  font-style: italic;
+  color: #943E43;
+}
+
+.cities-card-img-back .buttons {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cities-card-img-back .buttons .btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background: #27ae60;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cities-card-img-back .buttons .btn:hover {
+  background: #1E9757;
+}
+
+.cities-card .cities-card-img:hover .cities-card-img-front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cities-card .cities-card-img:hover .cities-card-img-back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.cities-card-information {
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 30px;
+  border-radius: 0 25px 25px 0;
+  width: 50%;
+  height: 100%;
+  background: #F1E4BB;
+  font-size: 25px;
+}
+
+.cities-card-information .title {
+  display: block;
+  height: 10%;
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #623D35;
+}
+
+.cities-card-information .text-information-right {
+  display: block;
+  height: 90%;
+  padding: 5px;
+  text-align: right;
+  height: auto;
+}
+
+.cities-card-information .text-information-left {
+  text-align: auto;
+  height: auto;
+  padding: 5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #F4F3EA;
+  color: #414141;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.flexible-img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-border-radius {
+  border-radius: 25px 0 0 25px;
+}
+
+.right-border-radius {
+  border-radius: 0 25px 25px 0;
+}
+/*# sourceMappingURL=style.css.map */

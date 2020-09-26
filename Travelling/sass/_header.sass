@@ -1,0 +1,42 @@
+.header
+    width: 100%
+    height: 100vh
+    background: url(../img/header-bg.jpg) no-repeat center
+    background-size: cover
+    .navbar
+        width: 100%
+        height: 10vh
+        display: flex
+        align-items: center
+        .menu
+            margin-left: auto
+        .logo
+            height: 100%
+            width: 10vw
+            display: flex
+            &-icon
+                height: 100%
+                padding: 3px
+        &-menu
+            font-family: 'Cuprum', sans-serif
+            font-weight: 700
+            &-item
+                margin: 0 10px
+                text-decoration: none
+                font-size: 25px
+                color: #ffffff
+                position: relative
+                &::before
+                    position: absolute
+                    content: ""
+                    height: 2px
+                    width: 0%
+                    border-radius: 25px
+                    background: #ffffff
+                    top: 150%
+                    right: 0
+                    transition: 0.3s
+            .navbar-menu-item:hover
+                &::before
+                    width: 100%
+                    left: 0
