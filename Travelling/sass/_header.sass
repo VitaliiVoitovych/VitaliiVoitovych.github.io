@@ -8,6 +8,7 @@
         height: 10vh
         display: flex
         align-items: center
+        border-bottom: 1px #ffffff solid
         .menu
             margin-left: auto
         .logo
@@ -33,10 +34,36 @@
                     width: 0%
                     border-radius: 25px
                     background: #ffffff
-                    top: 150%
+                    top: 120%
                     right: 0
                     transition: 0.3s
             .navbar-menu-item:hover
                 &::before
                     width: 100%
                     left: 0
+    .header-body
+        height: 90vh
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        text-align: center
+        &-information
+            color: #ffffff
+            font-size: 30px
+            text-shadow: 9px 11px 13px black
+            padding: 30px
+            h2
+               margin: 20px
+            .btn
+                width: 160px
+                height: 50px
+                border-radius: 10px
+                border: 0
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7)
+                transition: all 0.3s
+                font-size: 20px
+                font-weight: bold
+                &:hover
+                    cursor: pointer
+                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7)
