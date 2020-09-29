@@ -3,6 +3,7 @@
   height: 100vh;
   background: url(../img/header-bg.jpg) no-repeat center;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .header .navbar {
