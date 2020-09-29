@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <header class="header">
@@ -18,13 +19,16 @@
           <div class="logo-icon">
             <img src="img/logo.svg" alt="" class="flexible-img">
           </div>
-          <div class="logo-name"></div>
         </div>
         <div class="menu">
-          <button style="display: none;"></button>
           <nav class="navbar-menu">
+            <a class="menu-btn">
+              <span class="menu-btn-line"></span>
+              <span class="menu-btn-line"></span>
+              <span class="menu-btn-line"></span>
+            </a>
             <a href="#" class="navbar-menu-item">Home</a>
-            <a href="#" class="navbar-menu-item">About us</a>
+            <a href="#" class="navbar-menu-item">AboutUs</a>
             <a href="#" class="navbar-menu-item">Cities</a>
             <a href="#" class="navbar-menu-item">Contact</a>
           </nav>
@@ -43,6 +47,27 @@
   </header>
   <main>
     <div class="container">
+      <div class="about-us">
+        <h1 class="about-us-title">About us</h1>
+        <div class="about-us-grid">
+          <div class="about-us-grid-item">
+            <div class="icon"><img src="img/fast-time.svg" alt="" class="flexible-img"></div>
+            <div class="text"><h2>Fast services</h1></div>
+          </div>
+          <div class="about-us-grid-item">
+            <div class="icon"><img src="img/review.svg" alt="" class="flexible-img"></div>
+            <div class="text"><h2>More rated</h2></div>
+          </div>
+          <div class="about-us-grid-item">
+            <div class="icon"><img src="img/man.svg" alt="" class="flexible-img"></div>
+            <div class="text"><h2>Experienced workers</h2></div>
+          </div>
+          <div class="about-us-grid-item">
+            <div class="icon"><img src="img/dollar.svg" alt="" class="flexible-img"></div>
+            <div class="text"><h2>Best prices</h2></div>
+          </div>
+        </div>
+      </div>
       <div class="cities">
         <div class="cities-card">
           <div class="cities-card-img">
@@ -108,18 +133,9 @@
           </div>
         </div>
       </div>
-      <div class="contact">
-        <h1>Contact</h1>
-        <div></div>
-        <div class="social">
-          <div class="social-item"></div>
-          <div class="social-item"></div>
-          <div class="social-item"></div>
-          <div class="social-item"></div>
-          <div class="social-item"></div>
-        </div>
-      </div>
     </div>
   </main>
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/menu-btn.js"></script>
 </body>
 </html>
