@@ -58,10 +58,10 @@
     height: 380px;
   }
   .cities-card-img-back .ticket-information .title {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   .cities-card-img-back .ticket-information h2 {
-    font-size: 1rem;
+    font-size: 1em;
   }
   .cities-card-information {
     font-size: 20px;
@@ -113,6 +113,27 @@
 @media only screen and (max-width: 546px) {
   main .container {
     max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main .container {
+    max-width: 360px;
+  }
+  .cities-card {
+    height: 650px;
+  }
+  .cities-card-img-back .ticket-information h2 {
+    font-size: 0.75em;
+  }
+  .cities-card-information {
+    font-size: 15px;
+  }
+  .cities-card-information .title {
+    margin: 10px 0;
+  }
+  .cities-card-information p {
+    margin: 5px 0;
   }
 }
 /*# sourceMappingURL=media.css.map */

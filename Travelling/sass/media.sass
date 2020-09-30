@@ -37,9 +37,9 @@
     .cities-card-img-back
         .ticket-information
             .title
-                font-size: 1.5rem
+                font-size: 1.5em
             h2
-                font-size: 1rem
+                font-size: 1em
     .cities-card-information
         font-size: 20px
         padding: 20px
@@ -79,3 +79,20 @@
     main
         .container
             max-width: 480px
+@media only screen and ( max-width: 480px )
+    main
+        .container
+            max-width: 360px
+    .cities-card
+        height: 650px
+        &-img
+            &-back
+                .ticket-information
+                    h2
+                        font-size: 0.75em
+        &-information
+            font-size: 15px
+            .title
+                margin: 10px 0
+            p
+                margin: 5px 0
