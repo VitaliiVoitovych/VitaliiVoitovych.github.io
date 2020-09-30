@@ -338,11 +338,99 @@ main {
 
 .contact {
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
-.contact h1 {
+.contact-title {
   text-align: center;
+  font-size: 40px;
+  margin: 2rem;
+}
+
+.contact .social {
+  width: 100%;
+  height: auto;
+}
+
+.contact .social-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(300px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-auto-rows: 250px;
+  grid-gap: 30px;
+}
+
+.contact .social-grid-item {
+  height: 100%;
+  padding: 25px;
+}
+
+.contact .social-grid-item .social-icon {
+  height: 25%;
+}
+
+.contact .social-grid-item .social-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.contact .social-grid-item .social-button {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.contact .social-grid-item .social-button .btn {
+  height: 90%;
+  width: 50%;
+  border: 0;
+  border-radius: 10px;
+  font-size: 25px;
+  border: 2px #80859D solid;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  text-decoration: none;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .social-grid-item .social-button .btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  background: #80859D;
+  color: #ffffff;
 }
 
 * {
@@ -374,5 +462,15 @@ body {
 
 .right-border-radius {
   border-radius: 0 25px 25px 0;
+}
+
+.line {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 2px #B95D64 solid;
+  height: 3px;
+  width: 10%;
 }
 /*# sourceMappingURL=style.css.map */
