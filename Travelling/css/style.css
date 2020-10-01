@@ -433,6 +433,108 @@ main {
   color: #ffffff;
 }
 
+.footer {
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  background: #2c3e50;
+  padding: 25px 0;
+}
+
+.footer .developer-information {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .developer-information .information-title {
+  width: 40%;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #F3F2E9;
+}
+
+.footer .developer-information .contacts-menu {
+  margin-top: 20px;
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .developer-information .contacts-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  border: 5px #ffffff solid;
+  border-radius: 20px;
+}
+
+.footer .developer-information .contacts-menu-item .fab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .developer-information .contacts-menu .instagram:hover {
+  border-color: #fdf497;
+  color: #fdf497;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 0 35px #fdf497;
+          box-shadow: 0 0 35px #fdf497;
+}
+
+.footer .developer-information .contacts-menu .telegram:hover {
+  border-color: #00ACED;
+  color: #00ACED;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 0 35px #00ACED;
+          box-shadow: 0 0 35px #00ACED;
+}
+
+.footer .developer-information .contacts-menu .facebook:hover {
+  border-color: #0574E7;
+  color: #0574E7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 0 35px #0574E7;
+          box-shadow: 0 0 35px #0574E7;
+}
+
+.footer .developer-information .contacts-menu .google_plus:hover {
+  border-color: #C73D30;
+  color: #C73D30;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 0 35px #C73D30;
+          box-shadow: 0 0 35px #C73D30;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

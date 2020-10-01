@@ -135,5 +135,18 @@
   .cities-card-information p {
     margin: 5px 0;
   }
+  .footer {
+    height: auto;
+    text-align: center;
+  }
+  .footer .developer-information {
+    display: block;
+  }
+  .footer .developer-information .information-title {
+    width: 100%;
+  }
+  .footer .developer-information .contacts-menu {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=media.css.map */
