@@ -108,6 +108,12 @@
   .cities-card .left-border-radius {
     border-radius: 25px 25px 0 0;
   }
+  .cities-card .text-information-left {
+    text-align: center;
+  }
+  .cities-card .text-information-right {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 546px) {
