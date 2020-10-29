@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.header {
+  font-weight: bold;
+  height: 100vh;
+}
+
+.header__navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.header__logo {
+  border: none;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__img {
+  width: 55px;
+  height: 55px;
+  position: relative;
+}
+
+.logo__img::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, right top, left top, from(#FFA841), to(#FF8D07));
+  background: linear-gradient(270deg, #FFA841 0%, #FF8D07 100%);
+  z-index: -1;
+  top: 20px;
+  left: 13px;
+  border-radius: 50%;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.logo__name {
+  margin-left: 35px;
+  font-size: 24px;
+  color: #FFA63D;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 0 20px 0 20px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item::before {
+  position: absolute;
+  content: "";
+  background: #FFA841;
+  top: 150%;
+  right: 0%;
+  width: 0%;
+  height: 3px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__item:hover {
+  color: #FFA841;
+}
+
+.menu__item:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.hero {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90vh;
+}
+
+.hero__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__menu {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 0 52px 0;
+}
+
+.hero__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__img img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: #DB8A13;
+}
+
+.titles__title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.titles__subtitle {
+  font-size: 24px;
+}
+
+.social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-menu__item {
+  margin: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  font-size: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-menu__item:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #FFA841;
+}
+
+body {
+  background-color: #363636;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flexible-img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background: url("../img/tree.png") 85% 100% no-repeat;
+}
+
+.header__hero {
+  height: 90vh;
+}
+/*# sourceMappingURL=style.css.map */
