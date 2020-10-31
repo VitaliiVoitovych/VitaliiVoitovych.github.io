@@ -38,8 +38,7 @@
   position: relative;
 }
 
-.logo__img::before {
-  content: "";
+.logo__light {
   position: absolute;
   width: 30px;
   height: 30px;
