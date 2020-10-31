@@ -223,4 +223,9 @@ body {
 .header__hero {
   height: 90vh;
 }
+
+.light {
+  -webkit-filter: blur(14px);
+          filter: blur(14px);
+}
 /*# sourceMappingURL=style.css.map */
