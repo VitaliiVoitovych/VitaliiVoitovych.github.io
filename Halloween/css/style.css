@@ -23,6 +23,7 @@
 .header__burger {
   display: none;
   margin-left: auto;
+  margin-right: 10px;
   width: 25px;
   height: 20px;
   -webkit-box-align: center;
