@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
 .header {
   font-weight: bold;
   height: 100vh;
@@ -17,6 +18,43 @@
 
 .header__logo {
   border: none;
+}
+
+.header__burger {
+  display: none;
+  margin-left: auto;
+  width: 25px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: #363636;
+}
+
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+
+.header__burger span::before, .header__burger span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+
+.header__burger span::before {
+  top: 0;
+}
+
+.header__burger span::after {
+  bottom: 0;
 }
 
 .header__menu {
@@ -40,16 +78,16 @@
 
 .logo__light {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background: -webkit-gradient(linear, right top, left top, from(#FFA841), to(#FF8D07));
   background: linear-gradient(270deg, #FFA841 0%, #FF8D07 100%);
   z-index: -1;
-  top: 20px;
-  left: 13px;
+  top: 45%;
+  left: 33%;
   border-radius: 50%;
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -116,6 +154,7 @@
 }
 
 .hero__text {
+  font-family: 'Balsamiq Sans', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,10 +261,5 @@ body {
 
 .header__hero {
   height: 90vh;
-}
-
-.light {
-  -webkit-filter: blur(14px);
-          filter: blur(14px);
 }
 /*# sourceMappingURL=style.css.map */

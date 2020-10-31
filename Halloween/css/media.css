@@ -6,4 +6,47 @@
     background-position: 100% 100%;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .header {
+    background-position: 110% 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .active {
+    margin-top: 80px;
+  }
+  .deactive {
+    margin-top: -100px;
+  }
+  .header {
+    background-position: 120% 100%;
+  }
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__menu {
+    z-index: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: right;
+    position: absolute;
+    right: 0;
+  }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__item {
+    margin: 15px 0;
+  }
+  .titles__title {
+    font-size: 48px;
+  }
+}
 /*# sourceMappingURL=media.css.map */
