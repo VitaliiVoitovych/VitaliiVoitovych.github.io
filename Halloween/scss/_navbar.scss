@@ -53,6 +53,11 @@
         position: relative;
     }
     &__light{
+        animation-name: anim;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
         position: absolute;
         width: 20px;
         height: 20px;

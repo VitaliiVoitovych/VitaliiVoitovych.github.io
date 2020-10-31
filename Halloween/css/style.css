@@ -77,6 +77,16 @@
 }
 
 .logo__light {
+  -webkit-animation-name: anim;
+          animation-name: anim;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -261,5 +271,35 @@ body {
 
 .header__hero {
   height: 90vh;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  200% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  200% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
