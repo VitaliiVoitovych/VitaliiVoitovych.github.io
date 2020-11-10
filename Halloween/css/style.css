@@ -51,7 +51,7 @@
 }
 
 .header__burger span::before {
-  top: 0;
+  top: 5%;
 }
 
 .header__burger span::after {
