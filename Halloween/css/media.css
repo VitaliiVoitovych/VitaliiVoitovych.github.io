@@ -14,6 +14,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .active-btn span {
+    width: 0;
+  }
+  .active-btn span::before {
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .active-btn span::after {
+    bottom: 8px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
   .active-menu {
     margin-top: 80px;
   }

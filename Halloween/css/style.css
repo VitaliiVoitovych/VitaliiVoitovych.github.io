@@ -31,6 +31,8 @@
           align-items: center;
   position: relative;
   background: #363636;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__burger span {
@@ -39,6 +41,8 @@
   height: 3px;
   background: #FFFFFF;
   border-radius: 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__burger span::before, .header__burger span::after {
@@ -48,6 +52,8 @@
   height: 3px;
   background: #FFFFFF;
   border-radius: 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__burger span::before {

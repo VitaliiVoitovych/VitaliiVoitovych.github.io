@@ -5,4 +5,5 @@ button.onclick = func;
 function func(){
 	menu.classList.toggle("active-menu");
 	menu.classList.toggle("deactive-menu");
+	button.classList.toggle("active-btn")
 }
