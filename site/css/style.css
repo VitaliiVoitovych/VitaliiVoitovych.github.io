@@ -78,7 +78,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: url("/img/body-bg.jpg") center;
+  background: url("../img/body-bg.jpg") center;
   background-size: cover;
   background-attachment: fixed;
 }
