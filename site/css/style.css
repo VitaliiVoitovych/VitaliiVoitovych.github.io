@@ -1,1 +1,100 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.header {
+  width: 100%;
+  background-color: #A22131;
+  position: fixed;
+  color: #ffffff;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.header__navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo span {
+  margin-left: 15px;
+  font-size: 24px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__link {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #ffffff;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 5px 0;
+}
+
+.header__link::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: #ffffff;
+  bottom: -5px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header__link:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  color: #427952;
+}
+
+.header__link:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  background: #427952;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url("/img/body-bg.jpg") center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.flexible-img {
+  width: 60px;
+  height: 60px;
+}
+
+.hero {
+  height: 2000px;
+}
+/*# sourceMappingURL=style.css.map */

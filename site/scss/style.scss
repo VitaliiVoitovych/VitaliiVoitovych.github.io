@@ -1,1 +1,21 @@
-@import 'reset'
+@import 'header';
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;
+	background: url("/img/body-bg.jpg") center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.flexible-img{
+	width: 60px;
+	height: 60px;
+}
+.hero{
+	height: 2000px;
+}
