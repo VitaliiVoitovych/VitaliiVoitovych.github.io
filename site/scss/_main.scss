@@ -1,0 +1,27 @@
+.content{
+	width: 100%;
+}
+.about-us{
+	width: 100%;
+	min-height: 350px;
+	background-color: $aboutUs-bg;
+	&__row{
+		display: flex;
+		justify-content: center;
+	}
+	&__item{
+		flex: 0 1 50%;
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__title{
+		margin: 0 0 15px 0;
+		text-align: center;
+	}
+	&__text{
+		font-size: 18px;
+		line-height: 1.5;
+	}
+}
