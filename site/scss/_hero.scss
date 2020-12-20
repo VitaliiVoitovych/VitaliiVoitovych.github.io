@@ -1,6 +1,6 @@
 @import 'colors';
 .hero{
-	margin-top: 250px;
+	margin: 250px 0 100px 0;
 	min-height: 250px;
 	width: 100%;
 	&__body{
@@ -9,7 +9,7 @@
 		align-items: center;
 	}
 	&__title{
-		color : #ffffff;
+		color : $title-color;
 		font-size: 2.5rem;
 		font-weight: 700;
 		text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
@@ -17,14 +17,15 @@
 	&__btn{
 		background: none;
 		border: 4px #ffffff solid;
-		color: #ffffff;
+		color: $green;
 		font-size: 18px;
 		font-weight: 700;
 		transition: all 0.3s linear;
 		border-radius: 7px;
+		background: #ffffff;
 		&:hover{
-			background: #ffffff;
-			color: $hoverColor;
+			color: #ffffff;
+			background: none;
 		}
 	}
 }

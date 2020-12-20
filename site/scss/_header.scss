@@ -2,7 +2,7 @@
 .header{
 	width: 100%;
 	height: 58px;
-	background-color: #A22131;
+	background-color: $red;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -52,10 +52,10 @@
 		}
 		&:hover{
 			transform: translateY(-7px);
-			color: $hoverColor;
+			color: $green;
 			&::before{
 				transform: scaleX(1);
-				background: $hoverColor;
+				background: $green;
 			}
 		}
 	}

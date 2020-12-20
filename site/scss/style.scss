@@ -5,9 +5,10 @@
 @import 'main';
 
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Sofia', cursive;
 	background: url("../img/bg.jpg") center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -23,10 +24,15 @@ body{
 	height: auto;
 }
 .title{
+	font-family: 'Mountains of Christmas', cursive;
 	font-size: 2rem;
 	font-weight: 700;
 }
 .btn{
 	width: 130px;
 	height: 45px;
+}
+.line{
+	width: 120px;
+	height: 3px;
 }
