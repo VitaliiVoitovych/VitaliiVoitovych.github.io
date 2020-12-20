@@ -42,19 +42,19 @@
 	&__row{
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
 		justify-content: center;
 	}
 	&__col{
 		flex: 0 1 300px;
+		min-height: 300px;
 		margin: 15px;
 		border-radius: 10px;
-		border: 2px rgba(0, 0, 0, 0) solid;
+		border: 2px rgba(0, 0, 0, 0) dashed;
 		transition: all 0.3s linear;
+		background: $title-color;
 		&:hover{
-			background: $title-color;
-			border: 2px $red solid;
-			box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.7);
+			border: 2px $red dashed;
+			box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
 			transform: translateY(-10px)
 		}
 	}
@@ -70,17 +70,42 @@
 	&__img{
 		width: 100%;
 		img{
-			width: 100px;
-			height: 100px;
+			width: 75px;
+			height: 75px;
 		}
 	}
 	&__title{
+		font-family: 'Mountains of Christmas', cursive;
 		margin: 15px 0 0 0;
 		width: 100%;
-		font-weight: 700;
-		font-size: 1.5rem;
+		color: $red;
+		span{
+			font-weight: 700;
+			font-size: 1.7rem;
+		}
 	}
 	&__text{
 		width: 100%;
+		font-size: 16px;
+		margin: 15px 0;
+		color: #3D2014;
+		min-height: 150px;
+	}
+	&__button{
+		width: 100%;
+		margin: 5px 0;
+	}
+	&__btn{
+		border-radius: 7px;
+		font-size: 18px;
+		color: $title-color;
+		font-weight: 700;
+		background-color: $dark-green;
+		transition: all 0.3s;
+		&:hover{
+			border: 2px $dark-green solid;
+			background: none;
+			color: $dark-green;
+		}
 	}
 }
