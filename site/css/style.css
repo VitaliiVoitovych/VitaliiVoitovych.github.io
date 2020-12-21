@@ -240,7 +240,6 @@
 
 .about-us__line {
   background-color: #A22131;
-  margin: 0 0 15px 0;
 }
 
 .about-us__text {
@@ -252,6 +251,32 @@
 .xmas-items {
   width: 100%;
   background-color: #85B6D6;
+  padding: 50px 0;
+}
+
+.xmas-items__title {
+  color: #3D2014;
+  width: 100%;
+  margin: 0 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.xmas-items__title span {
+  margin: 20px 0;
+}
+
+.xmas-items__line {
+  display: block;
+  background-color: #A22131;
 }
 
 .xmas-items__row {
@@ -343,12 +368,12 @@
   color: #F7EEE8;
   font-weight: 700;
   background-color: #174536;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  border: 2px #174536 solid;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .col-item__btn:hover {
-  border: 2px #174536 solid;
   background: none;
   color: #174536;
 }
@@ -385,5 +410,6 @@ body {
 .line {
   width: 120px;
   height: 3px;
+  margin: 0 0 15px 0;
 }
 /*# sourceMappingURL=style.css.map */

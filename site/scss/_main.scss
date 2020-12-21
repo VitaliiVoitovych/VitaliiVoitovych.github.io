@@ -28,7 +28,6 @@
 	}
 	&__line{
 		background-color: $red;
-		margin: 0 0 15px 0;
 	}
 	&__text{
 		color: $text-color;
@@ -39,6 +38,22 @@
 .xmas-items{
 	width: 100%;
 	background-color: $light-blue;
+	padding: 50px 0;
+	&__title{
+		color: #3D2014;
+		width: 100%;
+		margin: 0 0 15px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		span{
+			margin: 20px 0;
+		}
+	}
+	&__line{
+		display: block;
+		background-color: $red;
+	}
 	&__row{
 		display: flex;
 		flex-wrap: wrap;
@@ -101,9 +116,9 @@
 		color: $title-color;
 		font-weight: 700;
 		background-color: $dark-green;
-		transition: all 0.3s;
+		border: 2px $dark-green solid;
+		transition: all 0.3s linear;
 		&:hover{
-			border: 2px $dark-green solid;
 			background: none;
 			color: $dark-green;
 		}
