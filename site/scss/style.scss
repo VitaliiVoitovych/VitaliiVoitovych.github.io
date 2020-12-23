@@ -5,12 +5,13 @@
 @import 'main';
 
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 body{
+	font-family: 'Balsamiq Sans', cursive;
 	background: url("../img/bg.jpg") center;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 2000px
 }
 .container{
 	width: 100%;
@@ -23,12 +24,21 @@ body{
 }
 .title{
 	font-family: 'Mountains of Christmas', cursive;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 700;
+}
+.subtitle{
+	font-family: 'Alex Brush', cursive;
+	font-size: 2.5rem;
+	font-weight: 400;
 }
 .btn{
 	width: 130px;
 	height: 45px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	transition: all 0.3s linear;
 }
 .line{
 	width: 120px;

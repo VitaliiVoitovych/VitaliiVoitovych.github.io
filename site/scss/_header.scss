@@ -15,6 +15,11 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+	&__progress{
+		width: 0%;
+		height: 3px;
+		background-color: $title-color;
+	}
 	&__logo{
 		display: flex;
 		align-items: center;
@@ -57,6 +62,33 @@
 			&::before{
 				transform: scaleX(1);
 				background: $green;
+			}
+		}
+	}
+	&__btn{
+		width: 50px;
+		height: 50px;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		&-line{
+			width: 24px;
+			height: 3px;
+			background: #ffffff;
+			position: relative;
+			&::before,&::after{
+				content: "";
+				display: block;
+				position: absolute;
+				width: 24px;
+				height: 3px;
+				background: #ffffff;
+			}
+			&::before{
+				transform: translateY(-7px);
+			}
+			&::after{
+				transform: translateY(7px);
 			}
 		}
 	}

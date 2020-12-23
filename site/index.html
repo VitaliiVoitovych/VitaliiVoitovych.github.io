@@ -4,8 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Merry Christmas</title>
+	<link rel="shortcut icon" href="img/logo-icon/bauble.ico" type="image/x-icon">
+	<link rel="icon" href="img/logo-icon/bauble-24.png" type="image/png">
+	<link rel="icon" href="img/logo-icon/bauble-128.png" type="image/png">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="header">
@@ -15,22 +19,24 @@
 					<img src="img/icon/bauble.svg" alt="" class="header__img">
 					<span>Merry Christmas</span>
 				</div>
-				<nav class="header__menu">
+				<div class="header__btn">
+					<span class="header__btn-line"></span>
+				</div>
+				<nav class="header__menu deactive-menu">
 					<a href="##" class="header__link">Home</a>
 					<a href="##" class="header__link">About us</a>
-					<a href="##" class="header__link">Gallery</a>
+					<a href="##" class="header__link">Christmas items</a>
 					<a href="##" class="header__link">Contacts</a>
 				</nav>
 			</div>
 		</div>
+		<div class="header__progress"></div>
 	</header>
 	<div class="hero">
 		<div class="container">
 			<div class="hero__body">
-				<h1 class="hero__title">Merry Christmas</h1>
-				<h2></h2>
-				<br>
-				<br><br>
+				<h1 class="hero__title title">Merry Christmas</h1>
+				<h2 class="hero__subtitle subtitle">with family and friends</h2>
 				<button class="hero__btn btn">Натисність</button>
 			</div>
 		</div>
@@ -50,6 +56,17 @@
 					</div>
 					<div class="about-us__item">
 						<img src="img/icon/christmas-tree.svg" alt="" class="flexible-img">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="why-us">
+			<div class="container">
+				<div class="why-us__body">
+					<div class="why-us__text">
+						<h2 class="why-us__title title">Lorem ipsum dolor sit amet.</h2>
+						<h2 class="why-us__subtitle subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est neque saepe adipisci perspiciatis quis magnam! Nesciunt sapiente earum doloribus atque?</h2>
+						<button class="why-us__btn btn">Click</button>
 					</div>
 				</div>
 			</div>
@@ -113,5 +130,12 @@
 			</div>
 		</div>
 	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body"></div>
+		</div>
+	</footer>
+	<script src="js/progress-bar.js"></script>
+	<script src="js/burger-btn.js"></script>
 </body>
 </html>

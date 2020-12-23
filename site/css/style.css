@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap");
 .header {
   width: 100%;
   height: 58px;
@@ -23,6 +24,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__progress {
+  width: 0%;
+  height: 3px;
+  background-color: #F7EEE8;
 }
 
 .header__logo {
@@ -94,6 +101,44 @@
   background: #427952;
 }
 
+.header__btn {
+  width: 50px;
+  height: 50px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__btn-line {
+  width: 24px;
+  height: 3px;
+  background: #ffffff;
+  position: relative;
+}
+
+.header__btn-line::before, .header__btn-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.header__btn-line::before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.header__btn-line::after {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
 @-webkit-keyframes bauble-anim {
   0% {
     -webkit-transform: rotate(10deg);
@@ -161,25 +206,23 @@
 
 .hero__title {
   color: #F7EEE8;
-  font-size: 3rem;
-  font-weight: 700;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero__subtitle {
+  margin: 25px 0;
+  color: #F7EEE8;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
 .hero__btn {
-  background: none;
-  border: 4px #ffffff solid;
-  color: #427952;
-  font-size: 18px;
-  font-weight: 700;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  border-radius: 7px;
-  background: #ffffff;
+  border: 2px #174536 solid;
+  color: #F7EEE8;
+  background: #174536;
 }
 
 .hero__btn:hover {
-  color: #ffffff;
+  color: #174536;
   background: none;
 }
 
@@ -248,6 +291,55 @@
   line-height: 1.5;
 }
 
+.why-us {
+  width: 100%;
+  background: url("../img/why-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.why-us__body {
+  min-height: 320px;
+  width: 100%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why-us__text {
+  color: #F7EEE8;
+  text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  text-align: center;
+}
+
+.why-us__title {
+  margin: 0 0 20px 0;
+}
+
+.why-us__subtitle {
+  margin: 0 0 25px 0;
+}
+
+.why-us__btn {
+  border: 2px #A22131 solid;
+  background: #A22131;
+  color: #F7EEE8;
+}
+
+.why-us__btn:hover {
+  color: #A22131;
+  background: none;
+}
+
 .xmas-items {
   width: 100%;
   background-color: #85B6D6;
@@ -307,8 +399,8 @@
   border: 2px #A22131 dashed;
   -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .col-item {
@@ -363,14 +455,9 @@
 }
 
 .col-item__btn {
-  border-radius: 7px;
-  font-size: 18px;
   color: #F7EEE8;
-  font-weight: 700;
-  background-color: #174536;
+  background: #174536;
   border: 2px #174536 solid;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
 }
 
 .col-item__btn:hover {
@@ -379,10 +466,10 @@
 }
 
 body {
+  font-family: 'Balsamiq Sans', cursive;
   background: url("../img/bg.jpg") center;
   background-size: cover;
   background-attachment: fixed;
-  height: 2000px;
 }
 
 .container {
@@ -398,13 +485,24 @@ body {
 
 .title {
   font-family: 'Mountains of Christmas', cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
+}
+
+.subtitle {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .btn {
   width: 130px;
   height: 45px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .line {

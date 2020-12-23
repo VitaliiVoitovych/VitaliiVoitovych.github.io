@@ -1,0 +1,72 @@
+@import '_colors';
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 767px){
+	.deactive-menu{
+		top: -150px;
+	}
+	.active-menu{
+		top: 57px;
+	}
+	.header{
+		&__navbar{
+			position: relative;
+			&::before{
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 100%;
+				background: $red;
+			}
+		}
+		&__logo{
+			span{
+				position: relative;
+				z-index: 50;
+			}
+		}
+		&__progress{
+			position: relative;
+			z-index: 50;
+		}
+		&__menu{
+			transition: all 0.3s;
+			position: absolute;
+			width: 100%;
+			z-index: -25;
+			left: 0;
+			flex-direction: column;
+			align-items: flex-start;
+			background: $red;
+		}
+		&__link{
+			margin: 12px 0 12px 5px;
+			&:hover{
+				transform: translateX(10px);
+			}
+		}
+		&__btn{
+			display: flex;
+			position: relative;
+			z-index: 50;
+		}
+	}
+	.about-us{
+		&__row{
+			flex-direction: column;
+		}
+		&__item{
+			flex: 1 0 100%;
+			padding: 20px;
+			img{
+				max-height: 450px;
+			}
+		}
+	}
+	.why-us{
+		&__text{
+			flex: 0 1 100%;
+		}
+	}
+}
