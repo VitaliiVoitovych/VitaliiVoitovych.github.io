@@ -17,7 +17,7 @@
 	}
 	&__progress{
 		width: 0%;
-		height: 3px;
+		height: 4px;
 		background-color: $title-color;
 	}
 	&__logo{
@@ -83,6 +83,7 @@
 				width: 24px;
 				height: 3px;
 				background: #ffffff;
+				transition: all 0.3s;
 			}
 			&::before{
 				transform: translateY(-7px);

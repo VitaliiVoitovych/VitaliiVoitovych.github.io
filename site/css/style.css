@@ -28,7 +28,7 @@
 
 .header__progress {
   width: 0%;
-  height: 3px;
+  height: 4px;
   background-color: #F7EEE8;
 }
 
@@ -127,6 +127,8 @@
   width: 24px;
   height: 3px;
   background: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__btn-line::before {

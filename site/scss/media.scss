@@ -1,10 +1,23 @@
 @import '_colors';
+
+.active-btn{
+	.header__btn-line{
+		transition: all 0.3s;
+		background: none;
+		&::before{
+			transform: rotate(45deg) translateY(0);
+		}
+		&::after{
+			transform: rotate(-45deg) translateY(0);
+		}
+	}
+}
 @media only screen and (max-width: 992px){
 
 }
 @media only screen and (max-width: 767px){
 	.deactive-menu{
-		top: -150px;
+		top: -170px;
 	}
 	.active-menu{
 		top: 57px;
@@ -38,12 +51,16 @@
 			left: 0;
 			flex-direction: column;
 			align-items: flex-start;
-			background: $red;
+			background: $green;
 		}
 		&__link{
 			margin: 12px 0 12px 5px;
 			&:hover{
+				color: #ffffff;
 				transform: translateX(10px);
+				&::before{
+					background: #ffffff;
+				}
 			}
 		}
 		&__btn{
