@@ -5,13 +5,19 @@
 }
 
 .active-btn .header__btn-line::before {
-  -webkit-transform: rotate(45deg) translateY(0);
-          transform: rotate(45deg) translateY(0);
+  -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
 }
 
 .active-btn .header__btn-line::after {
-  -webkit-transform: rotate(-45deg) translateY(0);
-          transform: rotate(-45deg) translateY(0);
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+}
+
+@media only screen and (max-width: 992px) {
+  .about-us__item {
+    padding: 30px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -88,10 +94,31 @@
   .about-us__item img {
     max-height: 450px;
   }
-  .why-us__text {
+  .greeting__text {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+  .about-us__info {
+    padding: 0px 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-us__info {
+    padding: 0;
+  }
+  .about-us__text {
+    font-size: 16px;
+  }
+  .greeting__title {
+    font-size: 2rem;
+  }
+  .greeting__subtitle {
+    font-size: 1.75rem;
+  }
+  .footer__title {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=media.css.map */

@@ -5,15 +5,19 @@
 		transition: all 0.3s;
 		background: none;
 		&::before{
-			transform: rotate(45deg) translateY(0);
+			transform: translateY(0) rotate(45deg);
 		}
 		&::after{
-			transform: rotate(-45deg) translateY(0);
+			transform: translateY(0) rotate(-45deg);
 		}
 	}
 }
 @media only screen and (max-width: 992px){
-
+	.about-us{
+		&__item{
+			padding: 30px;
+		}
+	}
 }
 @media only screen and (max-width: 767px){
 	.deactive-menu{
@@ -81,9 +85,37 @@
 			}
 		}
 	}
-	.why-us{
+	.greeting{
 		&__text{
 			flex: 0 1 100%;
+		}
+	}
+	.about-us{
+		&__info{
+			padding: 0px 40px;
+		}
+	}
+}
+@media only screen and (max-width: 480px){
+	.about-us{
+		&__info{
+			padding: 0;
+		}
+		&__text{
+			font-size: 16px;
+		}
+	}
+	.greeting{
+		&__title{
+			font-size: 2rem;
+		}
+		&__subtitle{
+			font-size: 1.75rem;
+		}
+	}
+	.footer{
+		&__title{
+			font-size: 2rem;
 		}
 	}
 }

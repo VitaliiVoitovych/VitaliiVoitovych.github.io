@@ -1,0 +1,13 @@
+@import "colors";
+
+.footer{
+	width: 100%;
+	background: $red;
+	color: $title-color;
+	&__body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 60px;
+	}
+}
