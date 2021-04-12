@@ -1,0 +1,47 @@
+@import 'reset';
+@import 'header';
+@import 'hero';
+@import 'main';
+body{
+	background-color: #faf3e0;
+	height: 2000px;
+}
+.header_shadow{
+	transition: all 0.2s linear;
+	background: #faf3e0;
+	box-shadow: 0 0 12px #000;
+}
+.flexible-img{
+	width: 100%;
+	height: auto;
+}
+.container{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.title{
+	font-size: 30px;
+	font-weight: 700;
+	margin: 15px 0 15px 0;
+	text-align: center;
+}
+.text{
+	font-size: 21px;
+	color: #1a1c1d;
+	text-align: center;
+}
+.line{
+	width: 150px;
+	height: 3px;
+	background-color: #302829;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	height: 8px;
+	background-color: #435560;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #6e7c7c;
+	border-radius: 10px;
+}
