@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -239,10 +240,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info-block__title {
-  color: #492718;
+  color: #faf3e0;
+  position: relative;
+  z-index: 2;
+}
+
+.info-block__title::before, .info-block__title::after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  top: 50%;
+  width: 35%;
+  height: 3px;
+  background-color: #812321;
+}
+
+.info-block__title::before {
+  left: 0;
+}
+
+.info-block__title::after {
+  right: 0;
 }
 
 .info-block__row {
+  margin: 50px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,6 +466,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact__title {
   color: #FAF3E0;
+  position: relative;
+  z-index: 2;
+}
+
+.contact__title::before, .contact__title::after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  top: 50%;
+  width: 40%;
+  height: 3px;
+  background-color: #812321;
+}
+
+.contact__title::before {
+  left: 0;
+}
+
+.contact__title::after {
+  right: 0;
 }
 
 .contact__row {
@@ -465,9 +507,18 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 300px;
           flex: 0 1 300px;
-  height: 350px;
+  min-height: 400px;
   background-color: #E3DCC8;
   border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 7px 20px #000;
+          box-shadow: 0 7px 20px #000;
 }
 
 .card {
@@ -506,14 +557,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card__title {
-  margin: 0px 0px 30px 0;
+  margin: 0px 0px 20px 0;
   font-size: 25px;
   font-weight: 700;
   text-align: center;
 }
 
 .card__name {
+  margin: 20px 0;
   font-size: 20px;
+  text-align: center;
+  min-height: 120px;
 }
 
 .card__btn {
@@ -551,6 +605,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #faf3e0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header_shadow {
