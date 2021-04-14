@@ -165,11 +165,50 @@
 		justify-content: center;
 		align-items: center;
 	}
-	&__item{
+	&__card{
 		margin: 15px;
 		flex: 0 1 300px;
-		min-height: 350px;
+		height: 350px;
 		background-color: #E3DCC8;
 		border-radius: 15px;
+	}
+}
+.card{
+	width: 100%;
+	height: 100%;
+	padding: 20px 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__icon{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 25px 0;
+		img{
+			width: 60px;
+			height: 60px;
+		}
+	}
+	&__title{
+		margin: 0px 0px 30px 0;
+		font-size: 25px;
+		font-weight: 700;
+		text-align: center;
+	}
+	&__name{
+		font-size: 20px;
+	}
+	&__btn{
+		margin-top: auto;
+		background-color: #322929;
+		color: #FAF3E0;
+		border: 3px #322929 solid;
+		transition: all 0.3s;
+		&:hover{
+			color: #322929;
+			background: none;
+		}
 	}
 }
