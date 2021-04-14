@@ -312,6 +312,7 @@ h1, h2, h3, h4, h5, h6 {
 .accordion {
   margin: 100px 0 100px 0;
   width: 100%;
+  min-height: 500px;
 }
 
 .accordion__inner {
@@ -325,11 +326,14 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
 .accordion__item {
-  margin: 1px 0;
+  margin: 2px 0;
   width: 75%;
 }
 
@@ -361,17 +365,57 @@ h1, h2, h3, h4, h5, h6 {
   color: #faf3e0;
 }
 
+.accordion__trigger:hover .accordion__trigger-icon::before, .accordion__trigger:hover .accordion__trigger-icon::after {
+  background-color: #faf3e0;
+}
+
+.accordion__trigger-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion__trigger-icon::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #302829;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.accordion__trigger-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #302829;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .accordion__title {
   font-size: 25px;
   font-weight: 700;
 }
 
 .accordion__content {
+  font-size: 18px;
   height: 0px;
   border: 3px #302829 solid;
   border-top: none;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  padding: 0 20px;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   overflow: hidden;
@@ -379,14 +423,74 @@ h1, h2, h3, h4, h5, h6 {
 
 .accordion__item_active .accordion__content {
   padding: 20px;
-  height: 150px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  height: auto;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.accordion__item_active .accordion__trigger-icon::after {
+  opacity: 0;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.contact {
+  margin: 100px 0 100px 0;
+  padding: 50px 0;
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(28, 84, 76, 0.8);
+}
+
+.contact__title {
+  color: #FAF3E0;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__item {
+  margin: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+  min-height: 350px;
+  background-color: #E3DCC8;
+  border-radius: 15px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #302829;
+  color: #faf3e0;
+}
+
+.footer__row {
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body {
   background-color: #faf3e0;
-  height: 2000px;
 }
 
 .header_shadow {
