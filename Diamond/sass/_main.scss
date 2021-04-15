@@ -154,15 +154,14 @@
 		border: 3px #302829 solid;
 		border-top: none;
 		padding: 0 20px;
-		transition: all 0.25s linear;
+		transition: .4s ease-in-out;
 		transform: translateY(-3px);
 		overflow: hidden;
 	}
 }
 .accordion__item_active .accordion__content{
 	padding: 20px;
-	height: auto;
-	transition: all 0.25s;
+	height: 200px;
 }
 .accordion__item_active .accordion__trigger-icon::after{
 	opacity: 0;

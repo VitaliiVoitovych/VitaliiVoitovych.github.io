@@ -1,3 +1,4 @@
+//header shadow
 const header = document.querySelector('.header');
 var scrolledTop
 window.addEventListener('scroll', function(){
@@ -9,7 +10,18 @@ window.addEventListener('scroll', function(){
 		header.classList.add('header_shadow')
 	}
 });
+//btn anim
+const button = document.querySelector(".header__btn");
+const menu = document.querySelector(".header__menu");
 
+button.onclick = func;
+
+function func(){
+	menu.classList.toggle('active-menu');
+	menu.classList.toggle('deactive-menu');
+	button.classList.toggle('active-btn');
+}
+//accordion anim
 document.querySelectorAll('.accordion__trigger').forEach((item) => 
 	item.addEventListener('click', () => {
 		const parent = item.parentNode;
@@ -22,6 +34,7 @@ document.querySelectorAll('.accordion__trigger').forEach((item) =>
 		}
 	})
 )
+// smooth scroll to block
 function scrollTo(element){
 	window.scroll({
 		left: 0,
@@ -41,6 +54,7 @@ for (anchor of anchors) {
 		})
 	}
 }
+//footer date
 var today = new Date();
 var year = today.getFullYear()
 

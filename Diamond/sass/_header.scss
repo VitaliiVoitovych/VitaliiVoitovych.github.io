@@ -1,14 +1,12 @@
 .header{
-	width: 60px;
 	width: 100%;
 	position: fixed;
-	z-index: 99;
+	z-index: 50;
 	top: 0;
 	left: 0;
 	transition: all 0.2s;
 	&__navbar{
 		width: 100%;
-		height: 60px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -28,9 +26,40 @@
 		height: 50px;
 		width: 50px;
 	}
+	&__btn{
+		width: 50px;
+		height: 50px;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 50;
+		span{
+			width: 50%;
+			height: 3px;
+			background-color: #322929;
+			position: relative;
+			transition: all 0.3s;
+			&::before,&::after{
+				position: absolute;
+				content: "";
+				display: block;
+				width: 100%;
+				height: 3px;
+				background-color: #322929;
+				transition: all 0.3s;
+			}
+			&::before{
+				transform: translateY(7px);
+			}
+			&::after{
+				transform: translateY(-7px);
+			}
+		}
+	}
 	&__menu{
 		display: flex;
-		height: 60px;
 		align-items: center;
 	}
 	&__menu-item{

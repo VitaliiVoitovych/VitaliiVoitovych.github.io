@@ -1,10 +1,11 @@
 .hero{
 	width: 100%;
 	padding: 130px 0 0 0;
-	min-height: 500px;
+	min-height: 300px;
 	color: #322929;
 	&__row{
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		width: 100%;
 		height: auto;
@@ -27,8 +28,12 @@
 	}
 	&__img{
 		flex: 0 1 57%;
-		box-shadow: 105px -0px #DCCDC2, 
+		box-shadow: 1000px -0px #DCCDC2, 
+					500px -0px #DCCDC2, 
 					0px -200px #DCCDC2,
+					0px -100px #DCCDC2,
+					1000px -200px #DCCDC2,
+					500px -200px #DCCDC2,
 					100px -200px #DCCDC2;
 	}
 }
