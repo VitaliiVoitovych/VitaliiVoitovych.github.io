@@ -727,7 +727,16 @@ h1, h2, h3, h4, h5, h6 {
   .header__logo {
     background: none;
   }
+  .hero__title {
+    font-size: 35px;
+    color: #faf3e0;
+    text-shadow: 3px 7px 15px #000;
+  }
+  .hero__subtitle {
+    color: #faf3e0;
+  }
   .hero__info {
+    margin: -55% 0 0 0;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

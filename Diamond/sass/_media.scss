@@ -69,7 +69,16 @@
 		background: none;
 	}
 	.hero{
+		&__title{
+			font-size: 35px;
+			color: #faf3e0;
+			text-shadow: 3px 7px 15px #000;
+		}
+		&__subtitle{
+			color: #faf3e0;
+		}
 		&__info{
+			margin: -55% 0 0 0;
 			order: 2;
 			flex: 0 1 100%;
 		}
