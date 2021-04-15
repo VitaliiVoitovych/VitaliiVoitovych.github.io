@@ -22,6 +22,35 @@ document.querySelectorAll('.accordion__trigger').forEach((item) =>
 		}
 	})
 )
+function scrollTo(element){
+	window.scroll({
+		left: 0,
+		top: element.offsetTop - 100,
+		behavior: 'smooth'
+	})
+}
+const home_btn = document.querySelector('.home_btn');
+const about_us__btn = document.querySelector('.about-us__btn');
+const info_block__btn = document.querySelector('.info-block__btn')
+const contact__btn = document.querySelector('.contact__btn');
+
+const about_us = document.querySelector('.about-us');
+const home = document.querySelector('.header');
+const info_block = document.querySelector('.info-block');
+const contact = document.querySelector('.contact');
+home_btn.addEventListener('click', () => {
+	scrollTo(home);
+})
+about_us__btn.addEventListener('click', () => {
+	scrollTo(about_us);
+})
+info_block__btn.addEventListener('click', () => {
+	scrollTo(info_block);
+})
+contact__btn.addEventListener('click', () => {
+	scrollTo(contact);
+})
+
 
 var today = new Date();
 var year = today.getFullYear()
