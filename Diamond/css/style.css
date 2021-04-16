@@ -378,129 +378,91 @@ h1, h2, h3, h4, h5, h6 {
   color: #812321;
 }
 
-.accordion {
-  margin: 100px 0 100px 0;
-  width: 100%;
-  min-height: 500px;
+/*
+.accordion{
+	margin: 100px 0 100px 0;
+	width: 100%;
+	min-height: 500px;
+	&__inner{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	&__item{
+		margin: 2px 0;
+		width: 75%;
+	}
+	&__trigger{
+		width: 100%;
+		height: 60px;
+		border: 3px #302829 solid;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 20px;
+		transition: all 0.3s;
+		color: #302829;
+		background-color: #faf3e0;
+		position: relative;
+		z-index: 2;
+		&:hover{
+			cursor: pointer;
+			background-color: #302829;
+			color: #faf3e0;
+			.accordion__trigger-icon::before, .accordion__trigger-icon::after{
+				background-color: #faf3e0;
+			}
+		}
+	}
+	&__trigger-icon{
+		width: 20px;
+		height: 20px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		&::before{
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: #302829;
+			transition: all 0.3s;
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: #302829;
+			transform: rotate(90deg);
+			transition: all 0.3s;
+		}
+	}
+	&__title{
+		font-size: 25px;
+		font-weight: 700;
+	}
+	&__content{
+		font-size: 18px;
+		height: 0px;
+		border: 3px #302829 solid;
+		border-top: none;
+		padding: 0 20px;
+		transition: .4s ease-in-out;
+		transform: translateY(-3px);
+		overflow: hidden;
+	}
 }
-
-.accordion__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+.accordion__item_active .accordion__content{
+	padding: 20px;
+	height: 200px;
 }
-
-.accordion__item {
-  margin: 2px 0;
-  width: 75%;
-}
-
-.accordion__trigger {
-  width: 100%;
-  height: 60px;
-  border: 3px #302829 solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 20px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: #302829;
-  background-color: #faf3e0;
-  position: relative;
-  z-index: 2;
-}
-
-.accordion__trigger:hover {
-  cursor: pointer;
-  background-color: #302829;
-  color: #faf3e0;
-}
-
-.accordion__trigger:hover .accordion__trigger-icon::before, .accordion__trigger:hover .accordion__trigger-icon::after {
-  background-color: #faf3e0;
-}
-
-.accordion__trigger-icon {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.accordion__trigger-icon::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #302829;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.accordion__trigger-icon::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #302829;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.accordion__title {
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.accordion__content {
-  font-size: 18px;
-  height: 0px;
-  border: 3px #302829 solid;
-  border-top: none;
-  padding: 0 20px;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  overflow: hidden;
-}
-
-.accordion__item_active .accordion__content {
-  padding: 20px;
-  height: 200px;
-}
-
-.accordion__item_active .accordion__trigger-icon::after {
-  opacity: 0;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
+.accordion__item_active .accordion__trigger-icon::after{
+	opacity: 0;
+	transition: all 0.25s;
+}*/
 .contact {
   margin: 100px 0 100px 0;
   padding: 50px 0;
