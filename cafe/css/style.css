@@ -450,15 +450,6 @@
   transition: all 0.3s;
 }
 
-.footer .vk:hover {
-  border-color: #4D75A3;
-  color: #4D75A3;
-  -webkit-box-shadow: 0 0 25px #4D75A3;
-          box-shadow: 0 0 25px #4D75A3;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
 .footer .telegram:hover {
   border-color: #2BA2DF;
   color: #2BA2DF;

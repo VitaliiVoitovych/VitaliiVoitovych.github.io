@@ -170,12 +170,6 @@ h1,h2,h3,h4,h5,h6{
 	box-shadow: 0 0 35px #00ACED;
 	transition: all 0.3s;
 }
-.vk:hover{
-	border-color: #4D75A3;
-	color: #4D75A3;
-	box-shadow: 0 0 35px #4D75A3;
-	transition: all 0.3s;
-}
 .telegram:hover{
 	border-color: #2BA2DF;
 	color: #2BA2DF;
